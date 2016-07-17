@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/colorGrey"
+        android:state_pressed="true"/><!-- hiện xám  khi  click-->
+    <item android:drawable="@color/colorCal"
+        android:state_pressed="false"/><!--hiện xám đen khi chua click-->
+</selector>

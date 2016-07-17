@@ -8,10 +8,19 @@
     android:background="@android:color/black"
     tools:context="com.example.loan.mycalculator.MainActivity">
     <TextView
-        android:layout_weight="1"
+        android:id="@+id/textViewMath"
+        android:layout_weight="0.6"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:textColor="#FFFFFF"
+        android:textSize="30dp" android:gravity="right"/>
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_weight="0.65"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="#FFFFFF"
+        android:text="0"
         android:textSize="30dp" android:gravity="right"/>
     <!---button back và delete-->
     <LinearLayout
@@ -36,7 +45,7 @@
             android:textColor="#FFFFFF"
             android:textSize="20dp"
             android:text="Back"
-            android:background="#FF252222"/>
+            android:background="@drawable/button_color"/>
         <Button
             android:id="@+id/buttonDelete"
             android:layout_width="0dp"
@@ -46,7 +55,7 @@
             android:textColor="#FFFFFF"
             android:textSize="20dp"
             android:text="Delete"
-            android:background="#FF252222"/>
+            android:background="@drawable/button_color"/>
     </LinearLayout>
     <!---nút 7,8,9 và phép chia-->
     <LinearLayout
@@ -63,7 +72,7 @@
             android:textColor="#FFFFFF"
             android:textSize="30dp"
             android:text="7"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
         <Button
             android:id="@+id/btNumber8"
             android:layout_width="0dp"
@@ -73,7 +82,7 @@
             android:textSize="30dp"
             android:text="8"
             android:layout_marginLeft="1dp"
-            android:background="#FF252222"/>
+            android:background="@drawable/button_color"/>
         <Button
             android:id="@+id/btNumber9"
             android:layout_width="0dp"
@@ -83,7 +92,7 @@
             android:textSize="30dp"
             android:text="9"
             android:layout_marginLeft="1dp"
-            android:background="#FF252222"/>
+            android:background="@drawable/button_color"/>
         <Button
             android:id="@+id/buttonDivide"
             android:layout_width="0dp"
@@ -93,7 +102,7 @@
             android:textSize="30dp"
             android:text="/"
             android:layout_marginLeft="1dp"
-            android:background="#FF252222"/>
+            android:background="@drawable/button_color"/>
     </LinearLayout>
     <!---4,5,6 button nhân -->
     <LinearLayout
@@ -111,7 +120,7 @@
             android:textSize="30dp"
             android:layout_marginTop="1dp"
             android:text="4"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
         <Button
             android:id="@+id/btNumber5"
             android:layout_width="0dp"
@@ -122,7 +131,7 @@
             android:layout_marginTop="1dp"
             android:layout_marginLeft="1dp"
             android:text="5"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
         <Button
             android:id="@+id/btNumber6"
             android:layout_width="0dp"
@@ -133,7 +142,7 @@
             android:layout_marginTop="1dp"
             android:layout_marginLeft="1dp"
             android:text="6"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
         <Button
             android:id="@+id/buttonMult"
             android:layout_width="0dp"
@@ -144,7 +153,7 @@
             android:layout_marginTop="1dp"
             android:layout_marginLeft="1dp"
             android:text="x"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
 
     </LinearLayout>
     <!---1,2,3 button trừ -->
@@ -163,7 +172,7 @@
             android:textSize="30dp"
             android:text="1"
             android:layout_marginTop="1dp"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
         <Button
             android:id="@+id/btNumber2"
             android:layout_width="0dp"
@@ -174,7 +183,7 @@
             android:layout_marginTop="1dp"
             android:layout_marginLeft="1dp"
             android:text="2"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
         <Button
             android:id="@+id/btNumber3"
             android:layout_width="0dp"
@@ -185,7 +194,7 @@
             android:layout_marginTop="1dp"
             android:layout_marginLeft="1dp"
             android:text="3"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
         <Button
             android:id="@+id/buttonMinus"
             android:layout_width="0dp"
@@ -196,7 +205,7 @@
             android:layout_marginTop="1dp"
             android:layout_marginLeft="1dp"
             android:text="-"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
     </LinearLayout>
     <!---0, =, button cộng -->
     <LinearLayout
@@ -214,7 +223,7 @@
             android:textSize="30dp"
             android:text="."
             android:layout_marginTop="1dp"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
         <Button
             android:id="@+id/btNumber0"
             android:layout_width="0dp"
@@ -225,7 +234,7 @@
             android:layout_marginTop="1dp"
             android:layout_marginLeft="1dp"
             android:text="0"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
         <Button
             android:id="@+id/buttonEquals"
             android:layout_width="0dp"
@@ -236,7 +245,7 @@
             android:layout_marginTop="1dp"
             android:layout_marginLeft="1dp"
             android:text="="
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
         <Button
             android:id="@+id/buttonPlus"
             android:layout_width="0dp"
@@ -247,7 +256,7 @@
             android:layout_marginTop="1dp"
             android:layout_marginLeft="1dp"
             android:text="+"
-            android:background="#FF252222" />
+            android:background="@drawable/button_color" />
 
     </LinearLayout>
 </LinearLayout>

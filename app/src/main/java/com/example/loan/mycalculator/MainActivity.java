@@ -91,8 +91,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             Double a = data.getDoubleExtra("KEY_NUMBER",0);
             Double b=Double.parseDouble(mTextViewResult.getText().toString());
-            Double kq=a*b;
-            mTextViewResult.setText(kq+"");
+            if(b==0)
+            {
+                mTextViewResult.setText(a+"");
+            }
+           else
+            {
+                Double kq=a*b;
+                mTextViewResult.setText(kq+"");
+            }
+
         }
     }
     @Override

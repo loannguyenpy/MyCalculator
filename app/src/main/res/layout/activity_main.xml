@@ -31,11 +31,14 @@
         android:orientation="horizontal"
         android:weightSum="3">
         <Button
+            android:id="@+id/buttonGo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textSize="20dp"
-            android:background="#FF252222" />
+            android:text="Go"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_color" />
         <Button
             android:id="@+id/buttonBack"
             android:layout_width="0dp"
@@ -152,7 +155,7 @@
             android:textSize="30dp"
             android:layout_marginTop="1dp"
             android:layout_marginLeft="1dp"
-            android:text="x"
+            android:text="*"
             android:background="@drawable/button_color" />
 
     </LinearLayout>
